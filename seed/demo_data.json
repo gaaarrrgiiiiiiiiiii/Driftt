@@ -1,0 +1,80 @@
+{
+  "RELIANCE.NS": {
+    "name": "Reliance Industries Ltd",
+    "last_close": 1410.0,
+    "session_count": 30,
+    "mean_return": 0.0008,
+    "stddev_return": 0.0142,
+    "mean_volume": 7500000,
+    "history": [
+      {"close": 1395.0, "volume": 7100000},
+      {"close": 1402.0, "volume": 6800000},
+      {"close": 1410.0, "volume": 7200000}
+    ]
+  },
+  "HDFCBANK.NS": {
+    "name": "HDFC Bank Ltd",
+    "last_close": 1640.0,
+    "session_count": 30,
+    "mean_return": 0.0005,
+    "stddev_return": 0.0115,
+    "mean_volume": 12000000,
+    "history": [
+      {"close": 1630.0, "volume": 11500000},
+      {"close": 1638.0, "volume": 12200000},
+      {"close": 1640.0, "volume": 11800000}
+    ]
+  },
+  "TCS.NS": {
+    "name": "Tata Consultancy Services Ltd",
+    "last_close": 3880.0,
+    "session_count": 30,
+    "mean_return": 0.0003,
+    "stddev_return": 0.0128,
+    "mean_volume": 2400000,
+    "history": [
+      {"close": 3850.0, "volume": 2100000},
+      {"close": 3875.0, "volume": 2300000},
+      {"close": 3880.0, "volume": 2500000}
+    ]
+  },
+  "IRCTC.NS": {
+    "name": "Indian Railway Catering and Tourism Corp",
+    "last_close": 920.0,
+    "session_count": 30,
+    "mean_return": 0.0012,
+    "stddev_return": 0.0185,
+    "mean_volume": 3100000,
+    "history": [
+      {"close": 905.0, "volume": 2800000},
+      {"close": 915.0, "volume": 3000000},
+      {"close": 920.0, "volume": 3200000}
+    ]
+  },
+  "ZOMATO.NS": {
+    "name": "Zomato Ltd",
+    "last_close": 235.0,
+    "session_count": 30,
+    "mean_return": 0.0021,
+    "stddev_return": 0.0240,
+    "mean_volume": 28000000,
+    "history": [
+      {"close": 230.0, "volume": 26000000},
+      {"close": 234.0, "volume": 27500000},
+      {"close": 235.0, "volume": 29000000}
+    ]
+  },
+  "INFY.NS": {
+    "name": "Infosys Ltd",
+    "last_close": 1820.0,
+    "session_count": 30,
+    "mean_return": 0.0006,
+    "stddev_return": 0.0135,
+    "mean_volume": 6500000,
+    "history": [
+      {"close": 1795.0, "volume": 6200000},
+      {"close": 1810.0, "volume": 6400000},
+      {"close": 1820.0, "volume": 6600000}
+    ]
+  }
+}
