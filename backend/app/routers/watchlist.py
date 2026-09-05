@@ -124,7 +124,7 @@ async def remove_item(
 @router.get("/{watchlist_id}/sparklines")
 async def get_watchlist_sparklines(
     watchlist_id: str,
-    range: str = "today",
+    range: str = "all",
     db: AsyncSession = Depends(get_db),
     user: User = Depends(get_current_user),
 ):

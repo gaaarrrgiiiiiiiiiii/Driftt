@@ -34,7 +34,7 @@ export default function Watchlist({
 
   useEffect(() => {
     if (!activeWatchlist?.id) return;
-    api.get(`/watchlist/${activeWatchlist.id}/sparklines`)
+    api.get(`/watchlist/${activeWatchlist.id}/sparklines?range=all`)
       .then((res) => setSparklines(res.data || {}))
       .catch((err) => console.error("Failed to load sparklines", err));
   }, [activeWatchlist?.id, items]);
