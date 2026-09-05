@@ -7,6 +7,13 @@
 
 ---
 
+## 🌐 Live Production Deployment
+* **Live Application:** [https://driftt-frontend.onrender.com](https://driftt-frontend.onrender.com)
+* **Live API & Health:** [https://driftt-backend.onrender.com/health/](https://driftt-backend.onrender.com/health/)
+* **Evaluator Access:** Click **"One-Click Demo Login"** on the home screen (or use `demo@driftt.app` / `demo123`).
+
+---
+
 ## ⚡ Quick Start (Zero-Friction One Command)
 
 ### 1. Launch Services
@@ -30,7 +37,7 @@ Navigate to **`http://localhost:3000`** in your browser.
 
 ## 🏛️ Architecture Overview
 
-Changelog operates on a stream-processing paradigm built on top of relational guarantees:
+Driftt operates on a stream-processing paradigm built on top of relational guarantees:
 
 ```
                   ┌──────────────────────┐   ┌──────────────────────┐
@@ -81,7 +88,7 @@ Changelog operates on a stream-processing paradigm built on top of relational gu
 ## 🧮 The Materiality Engine: Design & Formulas
 
 ### 1. Welford's Online Algorithm ($O(1)$ Space & Time)
-Rather than storing hundreds of thousands of historical intraday ticks or computing rolling window standard deviations via costly batch database queries, Changelog uses **Welford's Algorithm**:
+Rather than storing hundreds of thousands of historical intraday ticks or computing rolling window standard deviations via costly batch database queries, Driftt uses **Welford's Algorithm**:
 
 $$\bar{x}_n = \bar{x}_{n-1} + \frac{x_n - \bar{x}_{n-1}}{n}$$
 

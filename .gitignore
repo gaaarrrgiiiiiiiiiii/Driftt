@@ -17,3 +17,6 @@ dist/
 
 # Docker volumes
 pgdata/
+
+# Presentation notes
+pitch_script.txt
