@@ -17,6 +17,7 @@ from app.models.snapshot import Snapshot
 from app.models.event import Event
 from app.models.baseline import Baseline
 from app.models.cursor import SeenCursor
+from app.models.summary import DailySummary
 
 config = context.config
 

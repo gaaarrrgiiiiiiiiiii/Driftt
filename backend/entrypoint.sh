@@ -11,7 +11,7 @@ from sqlalchemy.ext.asyncio import create_async_engine
 from app.config import settings
 
 async def check():
-    for attempt in range(1, 31):
+    for attempt in range(1, 61):
         try:
             engine = create_async_engine(settings.database_url)
             async with engine.connect() as conn:
@@ -19,8 +19,10 @@ async def check():
                 await engine.dispose()
                 return
         except Exception as e:
+            if attempt % 5 == 0:
+                print(f'⏳ Waiting for database ({attempt}/60s)...')
             await asyncio.sleep(1)
-    print('❌ Database connection timed out after 30 seconds.')
+    print('❌ Database connection timed out after 60 seconds.')
     sys.exit(1)
 
 asyncio.run(check())
