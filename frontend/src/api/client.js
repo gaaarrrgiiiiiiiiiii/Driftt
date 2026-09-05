@@ -1,10 +1,14 @@
 import axios from "axios";
 
 // Dynamic API URL resolution:
-// 1. Explicit VITE_API_URL if configured during build/deployment (auto-prefixes https:// if needed)
-// 2. Direct localhost:8000 if running in local Vite dev mode (port 5173)
-// 3. Relative "/api" for Docker Compose / production reverse-proxy (avoiding all CORS issues)
+// 1. Explicit full URL (http:// or https://) if set
+// 2. Localhost:8000 if running in local Vite dev mode (port 5173)
+// 3. Default: relative "/api" reverse-proxied by Nginx to the backend container
 const getApiBase = () => {
+  const envUrl = import.meta.env.VITE_API_URL;
+  if (envUrl && (envUrl.startsWith("http://") || envUrl.startsWith("https://"))) {
+    return envUrl.replace(/\/+$/, "");
+  }
   if (typeof window !== "undefined" && window.location.port === "5173") {
     return "http://localhost:8000";
   }
