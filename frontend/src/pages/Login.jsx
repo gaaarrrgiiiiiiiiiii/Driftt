@@ -110,7 +110,7 @@ export default function Login() {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="investor@driftt.app"
+              placeholder="demo@driftt.app"
               className="w-full bg-[#121212] border border-[#222222] rounded-xl px-3.5 py-2 text-xs text-white focus:outline-none focus:border-[#32d583]"
             />
           </div>
@@ -124,7 +124,7 @@ export default function Login() {
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="••••••••"
+              placeholder="demo123"
               className="w-full bg-[#121212] border border-[#222222] rounded-xl px-3.5 py-2 text-xs text-white focus:outline-none focus:border-[#32d583]"
             />
           </div>

@@ -35,11 +35,11 @@ services:
     dockerfilePath: frontend/Dockerfile
     plan: free
     envVars:
-      - key: VITE_API_URL
+      - key: BACKEND_UPSTREAM
         fromService:
           type: web
           name: driftt-backend
-          property: host
+          property: hostport
 
   # Key Value (Redis/Valkey cache)
   - type: keyvalue

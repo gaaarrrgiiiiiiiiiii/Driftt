@@ -5,13 +5,6 @@ import axios from "axios";
 // 2. Direct localhost:8000 if running in local Vite dev mode (port 5173)
 // 3. Relative "/api" for Docker Compose / production reverse-proxy (avoiding all CORS issues)
 const getApiBase = () => {
-  let url = import.meta.env.VITE_API_URL;
-  if (url) {
-    if (!url.startsWith("http://") && !url.startsWith("https://") && !url.startsWith("/")) {
-      url = `https://${url}`;
-    }
-    return url;
-  }
   if (typeof window !== "undefined" && window.location.port === "5173") {
     return "http://localhost:8000";
   }
